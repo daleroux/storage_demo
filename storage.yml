@@ -32,12 +32,12 @@
             disks: "{{ database_vg_disks }}"
             volumes:
               - name: database_lv
-                size: 70%
+                size: 50%
                 mount_point: "/database"
                 fs_type: ext4
                 state: present
               - name: backup_lv
-                size: 29%
+                size: 20%
                 mount_point: "/backup"
                 state: present
       include_role:
