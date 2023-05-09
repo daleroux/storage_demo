@@ -41,4 +41,4 @@
                 mount_point: "/backup"
                 state: present
       include_role:
-        name: redhat.rhel-system-roles.storage
+        name: rhel-system-roles.storage
