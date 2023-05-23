@@ -24,7 +24,7 @@
             disks: "{{ web_vg_disks }}"
             volumes:
               - name: web_lv
-                size: 100%
+                size: 10%
                 mount_point: "/web"
                 fs_type: ext4
                 state: present
@@ -32,12 +32,12 @@
             disks: "{{ database_vg_disks }}"
             volumes:
               - name: database_lv
-                size: 50%
+                size: 1%
                 mount_point: "/database"
                 fs_type: ext4
                 state: present
               - name: backup_lv
-                size: 20%
+                size: 1%
                 mount_point: "/backup"
                 state: present
       include_role:
